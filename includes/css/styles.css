@@ -21,12 +21,66 @@ Notes:	 Hand coded for Udemy.com
    }
    footer{
      background: #333;
-     color: #eee;
+     color: #F2F3F4;
      font-size: 11px;
      padding: 20px;
    }
+#whyalumni{
+  background: #ffd463;
+
+}
+#img{
+   image-orientation: url('../../images/whyjoin.png')  center no-repeat;
+}
+
+#friend{
+  background: #F2F3F4;
+  padding-left: 120px;
+  padding-top: 10px;
+
+}
+#friendbutton{
+  background:  #F2F3F4;
+  padding-left: 60px;
+}
+#college{
+  background: white;
+  padding-left: 80px;
+}
+#friend p{
+  font-size:25px;
+  font-style: normal;
+  font-family: cursive;
+}
+.unstyled{
+  list-style: none;
+  font-size: 15px;
+  font-style: normal;
+  font-family: cursive;
+}
+#footer h5{
+  font-style: normal;
+  font-family: cursive;
+}
+#footer p{
+  font-style: normal;
+  font-family: cursive;
+}
+
+#alertMe{
+  background: #9f0826;
+}
+ h1{
+  color: #9f0826;
+}
+ h3{
+  color: #9f0826;
+}
 
 
+.gluphicon .glyphicon-heart{
+  color: red;
+}
 
 /* --------------------------------------
    Typography
@@ -50,7 +104,10 @@ Notes:	 Hand coded for Udemy.com
    }
    .navbar-fixed-top{
      z-index: 99999;
-
+   }
+   .navbar{
+     background: black;
+     opacity: 0.7;
    }
 
 /* --------------------------------------
@@ -59,10 +116,11 @@ Notes:	 Hand coded for Udemy.com
 
 
    .carousel-caption{
-    font-size: 24px;
+    font-size: 28px;
+    bottom: 150px;
    }
-   .carousel-caption h4{
-     font-size: 32px;
+   .carousel-caption h2{
+     font-size: 62px;
    }
    .carousel .backdrop{
      width: 100%;
@@ -82,25 +140,23 @@ Notes:	 Hand coded for Udemy.com
      opacity: 0.9;
      z-index: 99998;
    }
-.carousel .slide{
 
-}
 
 #myCarousel .item{ height: 700px;}
 #slide1{
-  background: url('../../images/back1.jpg') top center no-repeat;
+  background: url('../../images/back1m.jpg') top center no-repeat;
   background-size: cover;
 }
 #slide2{
-  background: url('../../images/back2.jpg') top center no-repeat;
+  background: url('../../images/back2m.jpg') top center no-repeat;
     background-size: cover;
 }
 #slide3{
-  background: url('../../images/back3.JPG') top center no-repeat;
+  background: url('../../images/back3m.JPG') top center no-repeat;
     background-size: cover;
 }
 #slide4{
-  background: url('../../images/back4.jpg') top center no-repeat;
+  background: url('../../images/back4m.jpg') top center no-repeat;
     background-size: cover;
 }
 
@@ -118,13 +174,37 @@ Notes:	 Hand coded for Udemy.com
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
+@media (max-width: 480px)  {
+    #myCarousel .item{
+      height: 250px;
+      padding-top: 250px;
+    }
+
+    #slide1{
+      background: url('../../images/back1vs.jpg') top center no-repeat;
+    }
+    #slide2{
+      background: url('../../images/back2vs.jpg') top center no-repeat;
+    }
+    #slide3{
+      background: url('../../images/back3vs.jpg') top center no-repeat;
+    }
+    #slide4{
+      background: url('../../images/back4vs.jpg') top center no-repeat;
+        background-size: cover;
+    }
+    #img{
+      img: url('../../images/whyjoinvs.png')  center no-repeat;
+    }
+
 
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  #myCarousel .item{ height: 310px;}
+@media (min-width: 768px) {
+  #myCarousel .item{ height: 350px;
+    padding-top: 350px;
+}
   #slide1{
     background: url('../../images/back1s.jpg') top center no-repeat;
       background-size: cover;
@@ -141,11 +221,15 @@ Notes:	 Hand coded for Udemy.com
     background: url('../../images/back4s.jpg') top center no-repeat;
       background-size: cover;
   }
+  #img{
+    img: url('../../images/whyjoinvs.png')  center no-repeat;
+  }
 
 }
 
-@media (max-width: 992px) {
-  #myCarousel .item{ height: 400px;}
+@media (min-width: 992px) {
+  #myCarousel .item{ height: 650px;
+  padding-top: 450px;}
   #slide1{
     background: url('../../images/back1m.jpg') top center no-repeat;
       background-size: cover;
@@ -161,5 +245,8 @@ Notes:	 Hand coded for Udemy.com
   #slide4{
     background: url('../../images/back4m.jpg') top center no-repeat;
       background-size: cover;
+  }
+  #img{
+    img: url('../../images/whyjoins.png')  center no-repeat;
   }
 }
