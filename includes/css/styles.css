@@ -27,8 +27,13 @@ Notes:	 Hand coded for Udemy.com
    }
 #whyalumni{
   background: #ffd463;
-
 }
+#modalcolor{
+    background: #ffd463;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #img{
    image-orientation: url('../../images/whyjoin.png')  center no-repeat;
 }
@@ -42,6 +47,7 @@ Notes:	 Hand coded for Udemy.com
 #friendbutton{
   background:  #F2F3F4;
   padding-left: 60px;
+  padding-top: 10px;
 }
 #college{
   background: white;
@@ -49,36 +55,51 @@ Notes:	 Hand coded for Udemy.com
 }
 #friend p{
   font-size:25px;
-  font-style: normal;
-  font-family: cursive;
+
 }
 .unstyled{
   list-style: none;
   font-size: 15px;
-  font-style: normal;
-  font-family: cursive;
+
 }
-#footer h5{
-  font-style: normal;
-  font-family: cursive;
+#formspace{
+  padding-top: 80px;
 }
-#footer p{
-  font-style: normal;
-  font-family: cursive;
+#modalspace{
+  padding-top: 150px;
+}
+#modalspace2{
+  padding-top: 100px;
 }
 
-#alertMe{
+#modalbutton{
   background: #9f0826;
 }
+
+ #buttonback{
+   background: #9f0826;
+ }
+#buttonregister{
+  background: #9f0826;
+  height: 35px;
+}
+
+
  h1{
   color: #9f0826;
 }
  h3{
   color: #9f0826;
 }
+h4{
+  color: #9f0826;
+}
 
+.btn{
+  white-space: normal;
+}
 
-.gluphicon .glyphicon-heart{
+.glyphicon .glyphicon-heart{
   color: red;
 }
 
@@ -118,9 +139,10 @@ Notes:	 Hand coded for Udemy.com
    .carousel-caption{
     font-size: 28px;
     bottom: 150px;
+
    }
    .carousel-caption h2{
-     font-size: 62px;
+     font-size: 52px;
    }
    .carousel .backdrop{
      width: 100%;
@@ -176,21 +198,21 @@ Notes:	 Hand coded for Udemy.com
 /* Portrait & landscape phone */
 @media (max-width: 480px)  {
     #myCarousel .item{
-      height: 250px;
-      padding-top: 250px;
+      height: 450px;
+      padding-top: 450px;
     }
 
     #slide1{
-      background: url('../../images/back1vs.jpg') top center no-repeat;
+      background: url('../../images/back1s.jpg') top center no-repeat;
     }
     #slide2{
-      background: url('../../images/back2vs.jpg') top center no-repeat;
+      background: url('../../images/back2s.jpg') top center no-repeat;
     }
     #slide3{
-      background: url('../../images/back3vs.jpg') top center no-repeat;
+      background: url('../../images/back3s.jpg') top center no-repeat;
     }
     #slide4{
-      background: url('../../images/back4vs.jpg') top center no-repeat;
+      background: url('../../images/back4s.jpg') top center no-repeat;
         background-size: cover;
     }
     #img{
@@ -199,11 +221,33 @@ Notes:	 Hand coded for Udemy.com
 
 
 }
+@media (min-width: 480px)  {
+
+  #myCarousel .item{
+    height: 550px;
+    padding-top: 550px;
+  }
+    #slide1{
+      background: url('../../images/back1m.jpg') top center no-repeat;
+    }
+    #slide2{
+      background: url('../../images/back2m.jpg') top center no-repeat;
+    }
+    #slide3{
+      background: url('../../images/back3m.jpg') top center no-repeat;
+    }
+    #slide4{
+      background: url('../../images/back4m.jpg') top center no-repeat;
+        background-size: cover;
+    }
+
+
+}
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 768px) {
-  #myCarousel .item{ height: 350px;
-    padding-top: 350px;
+  #myCarousel .item{ height: 730px;
+    padding-top: 730px;
 }
   #slide1{
     background: url('../../images/back1s.jpg') top center no-repeat;
@@ -228,8 +272,8 @@ Notes:	 Hand coded for Udemy.com
 }
 
 @media (min-width: 992px) {
-  #myCarousel .item{ height: 650px;
-  padding-top: 450px;}
+  #myCarousel .item{ height: 700px;
+  padding-top: 700px;}
   #slide1{
     background: url('../../images/back1m.jpg') top center no-repeat;
       background-size: cover;
